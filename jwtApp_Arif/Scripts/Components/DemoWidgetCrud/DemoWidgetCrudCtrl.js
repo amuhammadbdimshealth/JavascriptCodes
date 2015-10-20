@@ -8,6 +8,9 @@ class DemoWidgetCrudCtrl extends BaseCtrl
 		this.title='DemoWidgetCrud';
 		this.list=[];
 		this.count=1;
+		svc.get_1("GetAll",null).success(res=>{
+		    console.log(res);
+		});
 	}
 	addUser(){
 	    this.list.push({name:this.title, id:this.count++});
