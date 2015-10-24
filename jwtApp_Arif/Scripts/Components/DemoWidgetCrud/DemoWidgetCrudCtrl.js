@@ -24,10 +24,14 @@ class DemoWidgetCrudCtrl extends BaseCtrl
 	}
 	
 
-	
 	updateUser(user){
 	    console.log(user);
+	    user.isUpdate=true;
 	    this.updatedUser=user;
+	}
+	
+	cancelUpdate(user){
+	    user.isUpdate=false;
 	}
 	
 	deleteUser(user){
@@ -40,14 +44,22 @@ class DemoWidgetCrudCtrl extends BaseCtrl
 	    
 	}
 	
-	updateUserDB(){
-	    console.log(this.updatedUser);
+	updateUserDB(user){
+	    /*console.log(this.updatedUser);
 	    this.svc.getScalarValue("UpdateUser",this.updatedUser).success(res=>{
 	        console.log(res);
 	        alert("Well Done");
-	        
+	        this.updatedUser.isUpdate=false;
+	    });*/
+	    
+	    console.log(user);
+	    this.svc.getScalarValue("UpdateUser",user).success(res=>{
+	        console.log(res);
+	        alert("Well Done");
+	        user.isUpdate=false;
 	    });
 	}
+	
 }
 DemoWidgetCrudCtrl.$inject=['$scope', 'DemoWidgetCrudSvc'];
 export default DemoWidgetCrudCtrl;

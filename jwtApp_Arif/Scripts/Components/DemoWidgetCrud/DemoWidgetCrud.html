@@ -12,8 +12,26 @@ Update Name:<input type="text" ng-model="vm.updatedUser.name">
     </thead>
     <tbody>
         <tr ng-repeat="u in vm.list">
-            <td ng-bind="u.id"></td> <td ng-bind="u.name"></td>
-            <td><input type="button" value="Update" ng-click="vm.updateUser(u)"><input type="button" value="Delete" ng-click="vm.deleteUser(u)"></td>
+            <td ng-bind="u.id"></td> 
+            <td>
+                <span ng-if="!u.isUpdate" ng-bind="u.name"></span>
+                <span ng-if="u.isUpdate">
+                    <input type="text" ng-model="u.name">
+                </span>
+            </td>
+            <td>
+                <span ng-if="!u.isUpdate"> 
+                    <input type="button" value="Update" ng-click="vm.updateUser(u)">
+                     <input type="button" value="Delete" ng-click="vm.deleteUser(u)">
+                </span>
+                
+                <span ng-if="u.isUpdate">
+                    <input type="button" value="Save" ng-click="vm.updateUserDB(u)">
+                    <input type="button" value="Cancel" ng-click="vm.cancelUpdate(u)">
+                </span>
+                
+               
+            </td>
             
         </tr>
     </tbody>
