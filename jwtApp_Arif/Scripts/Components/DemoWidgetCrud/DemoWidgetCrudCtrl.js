@@ -4,6 +4,7 @@ class DemoWidgetCrudCtrl extends BaseCtrl
 {
 	constructor(scope, svc){
 		super(scope);
+		this.scope=scope;
 		this.svc = svc;
 		this.title='DemoWidgetCrud';
 		//this.list=[];
@@ -27,11 +28,15 @@ class DemoWidgetCrudCtrl extends BaseCtrl
 	updateUser(user){
 	    console.log(user);
 	    user.isUpdate=true;
+	    this.user1=angular.copy(user);
 	    this.updatedUser=user;
+	    
 	}
 	
 	cancelUpdate(user){
-	    user.isUpdate=false;
+	   user.isUpdate=false;
+	   user.name=this.user1.name;
+       
 	}
 	
 	deleteUser(user){
