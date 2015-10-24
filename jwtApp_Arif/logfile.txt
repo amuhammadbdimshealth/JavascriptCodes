@@ -633,3 +633,16 @@ File name: 'E:\FFV\jwtInAction\JWT.Inaction\jwtApp\Scripts\Layouts\root\signup.h
 2015-10-17 17:34:43,826 [307] INFO  Jwtex.JwtExController - files found: 3
 2015-10-20 22:37:11,295 [43] INFO  Jwtex.JwtExController - name:DemoWidgetCrud, mode:Widgets
 2015-10-20 22:37:11,361 [43] INFO  Jwtex.JwtExController - files found: 3
+2015-10-21 21:31:58,316 [17] INFO  Jwtex.JwtExController - name:DemoWidgetCrud, mode:Widgets
+2015-10-21 21:31:58,371 [17] INFO  Jwtex.JwtExController - files found: 3
+2015-10-21 21:32:46,833 [7] INFO  Jwtex.JwtExController - name:DemoWidgetCrud, mode:Widgets
+2015-10-21 21:32:46,834 [7] INFO  Jwtex.JwtExController - files found: 3
+2015-10-24 11:10:43,315 [25] INFO  Jwtex.JwtExController - name:complex, mode:Layouts
+2015-10-24 11:10:43,803 [25] INFO  Jwtex.JwtExController - files found: 2
+2015-10-24 11:14:30,588 [54] INFO  Jwtex.JwtExController - name:complex, mode:Layouts
+2015-10-24 11:14:30,589 [54] INFO  Jwtex.JwtExController - files found: 2
+2015-10-24 11:21:02,048 [70] INFO  Jwtex.JwtExController - name:complex, mode:Layouts
+2015-10-24 11:21:02,050 [70] INFO  Jwtex.JwtExController - files found: 2
+2015-10-24 11:25:43,713 [92] INFO  jwt.internals.jwtAppManager - complexNav
+2015-10-24 11:59:21,603 [7] INFO  Jwtex.JwtExController - name:DemoWidgetCrud, mode:Widgets
+2015-10-24 11:59:21,648 [7] INFO  Jwtex.JwtExController - files found: 3

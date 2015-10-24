@@ -2,7 +2,8 @@
 export default function config(stateprovider, routeProvider){
 	routeProvider.otherwise('login');
 
-	stateprovider.state('root',{abstract:true,url:'/root',templateUrl:'template/root__LAYOUT__',controller:'rootCtrl as vm'});
+	stateprovider.state('root',{url:'/root',templateUrl:'template/root__LAYOUT__',controller:'rootCtrl as vm'});
+	stateprovider.state('complex',{abstract:false,url:'/complex',templateUrl:'template/complex__LAYOUT__',controller:'complexCtrl as vm'});
 
 	stateprovider.state('root.home',{url:'/home',templateUrl:'template/home',controller:'homeCtrl as vm'});
 	stateprovider.state('login',{url:'/login',templateUrl:'template/login',controller:'loginCtrl as vm'});
@@ -14,6 +15,7 @@ export default function config(stateprovider, routeProvider){
 	stateprovider.state('root.Person',{url:'/Person',templateUrl:'template/Person',controller:'PersonCtrl as vm'});
 	stateprovider.state('root.products',{url:'/products',templateUrl:'template/Products',controller:'ProductsCtrl as vm'});
 	stateprovider.state('root.DemoNav',{url:'/DemoNav',templateUrl:'template/DemoWidget',controller:'DemoWidgetCtrl as vm'});
-	stateprovider.state('CrudNav',{url:'/CrudNav',templateUrl:'template/DemoWidgetCrud',controller:'DemoWidgetCrudCtrl as vm'});
+	stateprovider.state('CrudNav',{url:'/CrudNav'});
+	stateprovider.state('complex.complexNav',{url:'/complexNav',views:{'leftWidget':{templateUrl:'template/DemoWidgetCrud',controller:'DemoWidgetCrudCtrl as vm'},'rightWidget':{templateUrl:'template/DemoWidgetCrud',controller:'DemoWidgetCrudCtrl as vm'}}});
 }
 config.$inject=['$stateProvider', '$urlRouterProvider'];

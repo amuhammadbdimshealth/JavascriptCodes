@@ -11,6 +11,7 @@ import Products from 'Scripts/Components/Products/ProductsCtrl.js';
 import DemoWidget from 'Scripts/Components/DemoWidget/DemoWidgetCtrl.js';
 import DemoWidgetCrud from 'Scripts/Components/DemoWidgetCrud/DemoWidgetCrudCtrl.js';
 import root from 'Scripts/Layouts/root/rootCtrl.js';
+import complex from 'Scripts/Layouts/complex/complexCtrl.js';
 
 var moduleName='app.controllers';
 
@@ -26,6 +27,7 @@ angular.module(moduleName,[])
 .controller('ProductsCtrl', Products)
 .controller('DemoWidgetCtrl', DemoWidget)
 .controller('DemoWidgetCrudCtrl', DemoWidgetCrud)
-.controller('rootCtrl', root);
+.controller('rootCtrl', root)
+.controller('complexCtrl', complex);
 
 export default moduleName;
