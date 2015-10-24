@@ -6,15 +6,24 @@ class DemoWidgetCrudCtrl extends BaseCtrl
 		super(scope);
 		this.svc = svc;
 		this.title='DemoWidgetCrud';
-		this.list=[];
+		//this.list=[];
 		this.count=1;
-		svc.get_1("GetAll",null).success(res=>{
-		    console.log(res);
+		svc.getTableData("GetAll",null).success(res=>{
+		   // console.log(angular.fromJson(res));
+		    this.list=angular.fromJson(res);
 		});
+		
 	}
 	addUser(){
-	    this.list.push({name:this.title, id:this.count++});
+	    this.svc.getScalarValue("AddUser",{name:this.title}).success(res=>{
+	       console.log(res); 
+	       this.list.push({name:this.title, id:res});
+	    });
+	    
+	    
 	}
+	
+
 	
 	updateUser(user){
 	    console.log(user);
@@ -22,8 +31,22 @@ class DemoWidgetCrudCtrl extends BaseCtrl
 	}
 	
 	deleteUser(user){
-	    var fx=function(x){return x.id==user.id;};
-	    this.arrayRemove(this.list, fx);
+	    if(confirm("Are you sure you want to delete : " + user.name)){
+    	    var fx=function(x){return x.id==user.id;};
+    	    this.svc.getScalarValue("DeleteUser",{id:user.id}).success(res=>{
+    	       this.arrayRemove(this.list, fx); 
+    	    });
+	    }
+	    
+	}
+	
+	updateUserDB(){
+	    console.log(this.updatedUser);
+	    this.svc.getScalarValue("UpdateUser",this.updatedUser).success(res=>{
+	        console.log(res);
+	        alert("Well Done");
+	        
+	    });
 	}
 }
 DemoWidgetCrudCtrl.$inject=['$scope', 'DemoWidgetCrudSvc'];

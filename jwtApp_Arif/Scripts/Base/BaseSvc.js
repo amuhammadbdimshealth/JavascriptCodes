@@ -9,14 +9,14 @@ class BaseSvc
       
            return this.http.post('Jwt/GetDummyData',obj);        		
     }
-    get_1(spName, spParams){
+    getTableData(spName, spParams){
         
         if(!angular.isArray(spParams)){
             spParams=this.getParams(spParams);
         }
          return  this.http.post('Repository/GetTableData',{spName:spName, spParams:spParams}); 
     }
-    get_2(spName, spParams){
+    getScalarValue(spName, spParams){
         
          if(!angular.isArray(spParams)){
             spParams=this.getParams(spParams);
@@ -33,6 +33,7 @@ class BaseSvc
     getParams(obj){
         var paramList=[];
         for(var key in obj){
+            if(key!=='$$hashKey')
             paramList.push({name:key, value:obj[key]});
         }
         return paramList;
