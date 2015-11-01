@@ -19,7 +19,12 @@ Update Name:<input type="text" ng-model="vm.updatedUser.name">
 
 <table class="table">
     <thead>
-        <tr><th>Id</th><th>Name</th><th>Actions</th></tr>
+        <tr>
+            <th>Id</th> 
+            <th>Name</th> 
+            <th>Dept</th> 
+            <th>Actions</th> 
+        </tr>
     </thead>
     <tbody>
         <tr ng-repeat="u in vm.list">
@@ -29,6 +34,9 @@ Update Name:<input type="text" ng-model="vm.updatedUser.name">
                 <span ng-if="u.isUpdate">
                     <input type="text" ng-model="u.name">
                 </span>
+            </td>
+            <td>
+                <span ng-if="!u.isUpdate" ng-bind="u.deptId"></span>
             </td>
             <td>
                 <span ng-if="!u.isUpdate"> 

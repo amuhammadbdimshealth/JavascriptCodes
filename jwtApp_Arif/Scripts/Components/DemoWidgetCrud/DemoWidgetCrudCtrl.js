@@ -15,16 +15,21 @@ class DemoWidgetCrudCtrl extends BaseCtrl
 		    ];
 		this.currentDept = "---";
 		this.count=1;
+		
 		svc.getTableData("GetAll",null).success(res=>{
 		   // console.log(angular.fromJson(res));
 		    this.list=angular.fromJson(res); //convert json data to list of objects
 		});
 		
+		svc.getTableData("GetDepartments",null).success(res=>{
+		   // console.log(angular.fromJson(res));
+		    this.departmentList=angular.fromJson(res); //convert json data to list of objects
+		});
 	}
 	addUser(){
-	    this.svc.getScalarValue("AddUser",{name:this.title}).success(res=>{
+	    this.svc.getScalarValue("AddUser",{name:this.title, deptId:this.currentDept}).success(res=>{
 	       console.log(res); 
-	       this.list.push({name:this.title, id:res});
+	       this.list.push({name:this.title, id:res, deptId:this.currentDept});
 	    });
 	    
 	    
