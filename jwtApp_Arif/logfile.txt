@@ -688,3 +688,19 @@ File name: 'E:\FFV\jwtInAction\JWT.Inaction\jwtApp\Scripts\Layouts\root\signup.h
 2015-10-24 18:28:09,319 [255] INFO  Jwtex.JwtExController - files found: 3
 2015-10-27 07:13:55,997 [190] INFO  Jwtex.JwtExController - name:undefined, mode:Base
 2015-10-27 07:13:56,033 [190] INFO  Jwtex.JwtExController - files found: 5
+2015-10-28 23:14:09,556 [159] INFO  Jwtex.JwtExController - name:DemoWidgetCrud, mode:Widgets
+2015-10-28 23:14:09,955 [159] INFO  Jwtex.JwtExController - files found: 3
+2015-10-28 23:16:32,687 [170] INFO  Jwtex.JwtExController - name:complex, mode:Layouts
+2015-10-28 23:16:32,688 [170] INFO  Jwtex.JwtExController - files found: 2
+2015-10-28 23:17:28,922 [173] INFO  Jwtex.JwtExController - name:undefined, mode:Base
+2015-10-28 23:17:28,923 [173] INFO  Jwtex.JwtExController - files found: 5
+2015-10-28 23:18:09,489 [169] INFO  Jwtex.JwtExController - name:DemoWidget, mode:Widgets
+2015-10-28 23:18:09,490 [169] INFO  Jwtex.JwtExController - files found: 4
+2015-10-28 23:18:52,328 [170] INFO  Jwtex.JwtExController - name:DemoWidgetCrud, mode:Widgets
+2015-10-28 23:18:52,329 [170] INFO  Jwtex.JwtExController - files found: 3
+2015-10-28 23:22:05,390 [172] INFO  Jwtex.JwtExController - name:DemoWidgetCrud, mode:Widgets
+2015-10-28 23:22:05,391 [172] INFO  Jwtex.JwtExController - files found: 3
+2015-10-28 23:23:41,251 [170] INFO  Jwtex.JwtExController - name:login, mode:Widgets
+2015-10-28 23:23:41,253 [170] INFO  Jwtex.JwtExController - files found: 2
+2015-10-28 23:27:02,608 [173] INFO  Jwtex.JwtExController - name:DemoWidget, mode:Widgets
+2015-10-28 23:27:02,609 [173] INFO  Jwtex.JwtExController - files found: 4
