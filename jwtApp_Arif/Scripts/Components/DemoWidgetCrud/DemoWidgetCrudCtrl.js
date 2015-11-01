@@ -8,16 +8,12 @@ class DemoWidgetCrudCtrl extends BaseCtrl
 		this.svc = svc;
 		this.title='DemoWidgetCrud';
 		this.list=[];
-		this.departmentList = [
-		        {deptId:1,deptName:"EEE"}
-		        ,{deptId:2,deptName:"MCE"}
-		        ,{deptId:3,deptName:"CSE"}
-		    ];
-		this.currentDept = "---";
+		this.departmentList = [];
+		this.currentDept = {};
 		this.count=1;
 		
 		svc.getTableData("GetAll",null).success(res=>{
-		   // console.log(angular.fromJson(res));
+		   //console.log(angular.fromJson(res));
 		    this.list=angular.fromJson(res); //convert json data to list of objects
 		});
 		
@@ -27,9 +23,10 @@ class DemoWidgetCrudCtrl extends BaseCtrl
 		});
 	}
 	addUser(){
-	    this.svc.getScalarValue("AddUser",{name:this.title, deptId:this.currentDept}).success(res=>{
+	    this.svc.getScalarValue("AddUser",{name:this.title, deptId:this.currentDept.deptId}).success(res=>{
 	       console.log(res); 
-	       this.list.push({name:this.title, id:res, deptId:this.currentDept});
+	       this.list.push({name:this.title, id:res, deptId:this.currentDept.deptId, deptName:this.currentDept.deptName});
+	       console.log(this.list);
 	    });
 	    
 	    
@@ -46,7 +43,8 @@ class DemoWidgetCrudCtrl extends BaseCtrl
 	
 	cancelUpdate(user){
 	   user.isUpdate=false;
-	   user.name=this.user1.name;
+	   user.name=this.user1.name; //to reset the userName
+	   user.deptId=this.user1.deptId; //to reset the dropdown
        
 	}
 	
@@ -69,10 +67,12 @@ class DemoWidgetCrudCtrl extends BaseCtrl
 	    });*/
 	    
 	    console.log(user);
-	    this.svc.getScalarValue("UpdateUser",user).success(res=>{
+	    this.svc.getScalarValue("UpdateUser",{id:user.id, name:user.name, deptId:user.deptId}).success(res=>{
 	        console.log(res);
 	        alert("Well Done");
 	        user.isUpdate=false;
+	        user.deptName = this.departmentList.find(x=>x.deptId==user.deptId).deptName;
+	        //user.deptName = this.departmentList.find(function(x){x.deptId==user.deptId;}).deptName;
 	    });
 	}
 	
