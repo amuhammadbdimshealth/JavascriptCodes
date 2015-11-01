@@ -704,3 +704,7 @@ File name: 'E:\FFV\jwtInAction\JWT.Inaction\jwtApp\Scripts\Layouts\root\signup.h
 2015-10-28 23:23:41,253 [170] INFO  Jwtex.JwtExController - files found: 2
 2015-10-28 23:27:02,608 [173] INFO  Jwtex.JwtExController - name:DemoWidget, mode:Widgets
 2015-10-28 23:27:02,609 [173] INFO  Jwtex.JwtExController - files found: 4
+2015-11-01 09:25:58,383 [17] INFO  Jwtex.JwtExController - name:DemoWidgetCrud, mode:Widgets
+2015-11-01 09:25:58,939 [17] INFO  Jwtex.JwtExController - files found: 3
+2015-11-01 09:35:17,304 [24] INFO  Jwtex.JwtExController - name:DemoWidgetCrud, mode:Widgets
+2015-11-01 09:35:17,327 [24] INFO  Jwtex.JwtExController - files found: 3

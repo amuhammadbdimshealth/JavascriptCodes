@@ -5,6 +5,17 @@ Enter Name:<input type="text" ng-model="vm.title">
 Update Name:<input type="text" ng-model="vm.updatedUser.name"> 
 <input type="button" value="UpdateDB" ng-click="vm.updateUserDB()">
 
+<div> <strong>Select Department</strong> 
+    <select ng-options="d.deptId as d.deptName for d in vm.departmentList" ng-model="vm.currentDept">
+        <!--><option ng-repeat="d in vm.departmentList" value={{d.deptId}}>{{d.deptName}}</option> <-->
+          
+    </select>
+      
+</div>
+
+<p ng-bind="vm.currentDept"></p>
+
+
 
 <table class="table">
     <thead>

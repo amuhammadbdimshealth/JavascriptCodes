@@ -7,11 +7,17 @@ class DemoWidgetCrudCtrl extends BaseCtrl
 		this.scope=scope;
 		this.svc = svc;
 		this.title='DemoWidgetCrud';
-		//this.list=[];
+		this.list=[];
+		this.departmentList = [
+		        {deptId:1,deptName:"EEE"}
+		        ,{deptId:2,deptName:"MCE"}
+		        ,{deptId:3,deptName:"CSE"}
+		    ];
+		this.currentDept = "---";
 		this.count=1;
 		svc.getTableData("GetAll",null).success(res=>{
 		   // console.log(angular.fromJson(res));
-		    this.list=angular.fromJson(res);
+		    this.list=angular.fromJson(res); //convert json data to list of objects
 		});
 		
 	}
