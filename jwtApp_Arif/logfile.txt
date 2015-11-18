@@ -710,3 +710,23 @@ File name: 'E:\FFV\jwtInAction\JWT.Inaction\jwtApp\Scripts\Layouts\root\signup.h
 2015-11-01 09:35:17,327 [24] INFO  Jwtex.JwtExController - files found: 3
 2015-11-01 11:19:57,098 [34] INFO  Jwtex.JwtExController - name:DemoWidgetCrud, mode:Widgets
 2015-11-01 11:19:57,215 [34] INFO  Jwtex.JwtExController - files found: 3
+2015-11-15 09:38:16,148 [27] INFO  Jwtex.JwtExController - name:jwtFilter, mode:Components
+2015-11-15 09:38:16,636 [27] INFO  Jwtex.JwtExController - files found: 1
+2015-11-15 09:39:28,557 [19] INFO  Jwtex.JwtExController - name:helloDirective, mode:Components
+2015-11-15 09:39:28,558 [19] INFO  Jwtex.JwtExController - files found: 3
+2015-11-15 09:42:37,889 [45] INFO  Jwtex.JwtExController - name:DemoWidgetCrud, mode:Widgets
+2015-11-15 09:42:37,898 [45] INFO  Jwtex.JwtExController - files found: 3
+2015-11-15 09:53:14,740 [86] INFO  Jwtex.JwtExController - name:helloDirective, mode:Components
+2015-11-15 09:53:14,742 [86] INFO  Jwtex.JwtExController - files found: 3
+2015-11-15 09:53:46,346 [88] INFO  Jwtex.JwtExController - name:helloDirective, mode:Components
+2015-11-15 09:53:46,347 [88] INFO  Jwtex.JwtExController - files found: 3
+2015-11-15 09:58:28,466 [126] INFO  Jwtex.JwtExController - name:helloDirective, mode:Components
+2015-11-15 09:58:28,468 [126] INFO  Jwtex.JwtExController - files found: 3
+2015-11-15 10:00:20,782 [135] INFO  Jwtex.JwtExController - name:DemoWidgetCrud, mode:Widgets
+2015-11-15 10:00:20,789 [135] INFO  Jwtex.JwtExController - files found: 3
+2015-11-15 10:07:15,067 [181] INFO  Jwtex.JwtExController - name:helloDirective, mode:Components
+2015-11-15 10:07:15,068 [181] INFO  Jwtex.JwtExController - files found: 3
+2015-11-18 20:29:18,092 [22] INFO  Jwtex.JwtExController - name:helloDirective, mode:Components
+2015-11-18 20:29:18,266 [22] INFO  Jwtex.JwtExController - files found: 3
+2015-11-18 20:29:41,228 [21] INFO  Jwtex.JwtExController - name:DemoWidgetCrud, mode:Widgets
+2015-11-18 20:29:41,229 [21] INFO  Jwtex.JwtExController - files found: 3
