@@ -21,6 +21,15 @@ class DemoWidgetCrudCtrl extends BaseCtrl
 		   // console.log(angular.fromJson(res));
 		    this.departmentList=angular.fromJson(res); //convert json data to list of objects
 		});
+		
+	
+		this.d_options={ msg:' sad sdasd asd asd asd ',
+		    onClick:()=>{alert('hello');}
+		    
+		};
+	}
+	dClick(){
+	    alert('i am listener of hello directive');
 	}
 	addUser(){
 	    this.svc.getScalarValue("AddUser",{name:this.title, deptId:this.currentDept.deptId}).success(res=>{
