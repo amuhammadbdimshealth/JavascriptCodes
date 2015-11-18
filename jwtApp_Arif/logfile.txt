@@ -730,3 +730,28 @@ File name: 'E:\FFV\jwtInAction\JWT.Inaction\jwtApp\Scripts\Layouts\root\signup.h
 2015-11-18 20:29:18,266 [22] INFO  Jwtex.JwtExController - files found: 3
 2015-11-18 20:29:41,228 [21] INFO  Jwtex.JwtExController - name:DemoWidgetCrud, mode:Widgets
 2015-11-18 20:29:41,229 [21] INFO  Jwtex.JwtExController - files found: 3
+2015-11-19 00:06:29,052 [21] INFO  Jwtex.JwtExController - name:DemoWidgetCrud, mode:Widgets
+2015-11-19 00:06:29,055 [21] INFO  Jwtex.JwtExController - files found: 3
+2015-11-19 00:06:56,139 [21] INFO  Jwtex.JwtExController - name:DemoWidgetCrudCln, mode:Widgets
+2015-11-19 00:06:56,139 [21] INFO  Jwtex.JwtExController - files found: 3
+2015-11-19 00:07:06,129 [118] INFO  Jwtex.JwtExController - name:DemoWidgetCrud, mode:Widgets
+2015-11-19 00:07:06,130 [118] INFO  Jwtex.JwtExController - files found: 3
+2015-11-19 00:07:38,693 [118] INFO  Jwtex.JwtExController - name:DemoWidgetCrudCln, mode:Widgets
+2015-11-19 00:07:38,693 [118] INFO  Jwtex.JwtExController - files found: 3
+2015-11-19 00:08:03,350 [121] INFO  Jwtex.JwtExController - name:DemoWidgetCrud, mode:Widgets
+2015-11-19 00:08:03,351 [121] INFO  Jwtex.JwtExController - files found: 3
+2015-11-19 00:08:15,585 [21] INFO  Jwtex.JwtExController - name:DemoWidgetCrudCln, mode:Widgets
+2015-11-19 00:08:15,586 [21] INFO  Jwtex.JwtExController - files found: 3
+2015-11-19 00:08:21,146 [123] INFO  Jwtex.JwtExController - name:DemoWidgetCrud, mode:Widgets
+2015-11-19 00:08:21,146 [123] INFO  Jwtex.JwtExController - files found: 3
+2015-11-19 00:08:36,254 [21] INFO  Jwtex.JwtExController - name:DemoWidgetCrudCln, mode:Widgets
+2015-11-19 00:08:36,254 [21] INFO  Jwtex.JwtExController - files found: 3
+2015-11-19 00:18:00,205 [183] INFO  Jwtex.JwtExController - name:root, mode:Layouts
+2015-11-19 00:18:00,206 [183] INFO  Jwtex.JwtExController - files found: 3
+2015-11-19 00:18:02,229 [190] INFO  Jwtex.JwtExController - name:complex, mode:Layouts
+2015-11-19 00:18:02,230 [190] INFO  Jwtex.JwtExController - files found: 2
+2015-11-19 00:19:01,123 [202] INFO  jwt.internals.jwtAppManager - complexNavCln
+2015-11-19 00:19:36,452 [214] INFO  Jwtex.JwtExController - name:DemoWidgetCrudCln, mode:Widgets
+2015-11-19 00:19:36,453 [214] INFO  Jwtex.JwtExController - files found: 3
+2015-11-19 00:19:59,679 [212] INFO  Jwtex.JwtExController - name:helloDirective, mode:Components
+2015-11-19 00:19:59,680 [212] INFO  Jwtex.JwtExController - files found: 3

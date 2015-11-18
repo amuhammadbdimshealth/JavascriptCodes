@@ -10,6 +10,7 @@ import Person from 'Scripts/Components/Person/PersonCtrl.js';
 import Products from 'Scripts/Components/Products/ProductsCtrl.js';
 import DemoWidget from 'Scripts/Components/DemoWidget/DemoWidgetCtrl.js';
 import DemoWidgetCrud from 'Scripts/Components/DemoWidgetCrud/DemoWidgetCrudCtrl.js';
+import DemoWidgetCrudCln from 'Scripts/Components/DemoWidgetCrudCln/DemoWidgetCrudClnCtrl.js';
 import root from 'Scripts/Layouts/root/rootCtrl.js';
 import complex from 'Scripts/Layouts/complex/complexCtrl.js';
 
@@ -27,6 +28,7 @@ angular.module(moduleName,[])
 .controller('ProductsCtrl', Products)
 .controller('DemoWidgetCtrl', DemoWidget)
 .controller('DemoWidgetCrudCtrl', DemoWidgetCrud)
+.controller('DemoWidgetCrudClnCtrl', DemoWidgetCrudCln)
 .controller('rootCtrl', root)
 .controller('complexCtrl', complex);
 

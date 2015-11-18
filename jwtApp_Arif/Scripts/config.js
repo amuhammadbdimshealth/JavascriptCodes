@@ -17,5 +17,6 @@ export default function config(stateprovider, routeProvider){
 	stateprovider.state('root.DemoNav',{url:'/DemoNav',templateUrl:'template/DemoWidget',controller:'DemoWidgetCtrl as vm'});
 	stateprovider.state('CrudNav',{url:'/CrudNav'});
 	stateprovider.state('root.complex.complexNav',{url:'/complexNav',views:{'leftWidget':{templateUrl:'template/DemoWidgetCrud',controller:'DemoWidgetCrudCtrl as vm'},'rightWidget':{templateUrl:'template/DemoWidgetCrud',controller:'DemoWidgetCrudCtrl as vm'}}});
+	stateprovider.state('root.complex.complexNavCln',{url:'/complexNavCln',views:{'leftWidget':{templateUrl:'template/DemoWidgetCrudCln',controller:'DemoWidgetCrudClnCtrl as vm'},'rightWidget':{}}});
 }
 config.$inject=['$stateProvider', '$urlRouterProvider'];

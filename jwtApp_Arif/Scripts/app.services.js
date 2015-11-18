@@ -7,6 +7,7 @@ import Person from 'Scripts/Components/Person/PersonSvc.js';
 import Products from 'Scripts/Components/Products/ProductsSvc.js';
 import DemoWidget from 'Scripts/Components/DemoWidget/DemoWidgetSvc.js';
 import DemoWidgetCrud from 'Scripts/Components/DemoWidgetCrud/DemoWidgetCrudSvc.js';
+import DemoWidgetCrudCln from 'Scripts/Components/DemoWidgetCrudCln/DemoWidgetCrudClnSvc.js';
 import root from 'Scripts/Layouts/root/rootSvc.js';
 
 var moduleName='app.services';
@@ -20,6 +21,7 @@ angular.module(moduleName,[])
 .factory('ProductsSvc', Products)
 .factory('DemoWidgetSvc', DemoWidget)
 .factory('DemoWidgetCrudSvc', DemoWidgetCrud)
+.factory('DemoWidgetCrudClnSvc', DemoWidgetCrudCln)
 .factory('rootSvc', root);
 
 export default moduleName;
