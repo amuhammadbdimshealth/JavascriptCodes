@@ -1,0 +1,68 @@
+<h3 ng-bind="vm.title"></h3>
+
+
+<div class="hello-directive" data="vm.list" options="vm.d_options" >
+    
+</div>
+
+
+
+Enter Name:<input type="text" ng-model="vm.title">
+<input class="btn btn-success" type="button" value="Add User" ng-click="vm.addUser()"/>
+Update Name:<input type="text" ng-model="vm.updatedUser.name"> 
+<input type="button" value="UpdateDB" ng-click="vm.updateUserDB()">
+
+<div> <strong>Select Department</strong> 
+    <select ng-options="d as d.deptName for d in vm.departmentList" ng-model="vm.currentDept">
+        <!--><option ng-repeat="d in vm.departmentList" value={{d.deptId}}>{{d.deptName}}</option> <-->
+          
+    </select>
+      
+</div>
+
+<p ng-bind="vm.currentDept.deptName"></p>
+
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th> 
+            <th>Name</th> 
+            <th>Dept</th> 
+            <th>Actions</th> 
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="u in vm.list">
+            <td ng-bind="u.id"></td> 
+            <td>
+                <span ng-if="!u.isUpdate" ng-bind="u.name"></span>
+                <span ng-if="u.isUpdate">
+                    <input type="text" ng-model="u.name">
+                </span>
+            </td>
+            <td>
+                <span ng-if="!u.isUpdate" ng-bind="u.deptName"></span>
+                <span ng-if="u.isUpdate">
+                    <select ng-options="d.deptId as d.deptName for d in vm.departmentList" ng-model="u.deptId"></select>
+                </span>
+            </td>
+            <td>
+                <span ng-if="!u.isUpdate"> 
+                    <input type="button" value="Update" ng-click="vm.updateUser(u)">
+                     <input type="button" value="Delete" ng-click="vm.deleteUser(u)">
+                </span>
+                
+                <span ng-if="u.isUpdate">
+                    <input type="button" value="Save" ng-click="vm.updateUserDB(u)">
+                    <input type="button" value="Cancel" ng-click="vm.cancelUpdate(u)">
+                </span>
+                
+               
+            </td>
+            
+        </tr>
+    </tbody>
+</table>
+
