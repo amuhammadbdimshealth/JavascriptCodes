@@ -1,4 +1,42 @@
-<h3>Custom Directive Output</h3>
+
+
+<h3>Custom Directive Output - Showing Limited Columns with Custom-Mapping</h3>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th ng-repeat="map in options.customDataMapping" ng-bind="map.header" ng-click="map.onClick()"></th>
+            
+        </tr>    
+    </thead>
+    <tbody>
+        <tr ng-repeat="row in data">
+            <td ng-repeat="map in options.customDataMapping" ng-bind="row[map.field]"></td>
+        </tr>
+    </tbody>
+</table>
+
+<!-->--------------------------<-->
+
+<h3>Custom Directive Output - Showing Limited Columns</h3>
+<div ng-bind="options.customHeaderList"></div>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th ng-repeat="header in options.customHeaderList" ng-bind="header"></th>
+            
+        </tr>    
+    </thead>
+    <tbody>
+        <tr ng-repeat="row in data">
+            <td ng-repeat="header in options.customHeaderList" ng-bind="row[header]"></td>
+        </tr>
+    </tbody>
+</table>
+
+<!-->--------------------------<-->
+<h3>Custom Directive Output - Showing All Columns</h3>
 <table class="table">
     <thead>
         <tr>
@@ -7,8 +45,8 @@
         </tr>    
     </thead>
     <tbody>
-        <tr ng-repeat="d in data">
-            <td ng-repeat="header in headerList" ng-bind="d[header]"></td>
+        <tr ng-repeat="row in data">
+            <td ng-repeat="header in headerList" ng-bind="row[header]"></td>
         </tr>
     </tbody>
     

@@ -15,17 +15,19 @@ class helloDirective
 		    $scope.headerList=[];
 	}
 	link(scope, element, attr){  //link function will trigger when the element will be rendered 
-	    console.log(scope, element, attr);
+	    //console.log(scope, element, attr);
 	    scope.$watch('data', function(){
-	        console.log(scope.data);
+	        
+	        //console.log(scope.data);
+	        
 	        if(scope.data.length>0)
 	        for(var prop in scope.data[0]){
 	            if(!(prop == "$$hashKey"))
 	            scope.headerList.push(prop);
 	        }
-	        console.log(scope.headerList);
+	        //console.log(scope.headerList);
 	    });
-	    
+	    //console.log(scope.options);
 	    
 	}
 	static builder()	{

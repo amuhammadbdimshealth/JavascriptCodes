@@ -15,6 +15,7 @@ constructor(scope, svc){
 		svc.getTableData("GetAll",null).success(res=>{
 		   //console.log(angular.fromJson(res));
 		    this.list=angular.fromJson(res); //convert json data to list of objects
+		    //console.log(this.list);
 		});
 		
 		svc.getTableData("GetDepartments",null).success(res=>{
@@ -25,6 +26,22 @@ constructor(scope, svc){
 	
 		this.d_options={ msg:' this msg is from widget-controller ',
 		    onClick:()=>{alert('hello! from widget-controller');}
+		    
+		};
+		
+		this.dConfigData={
+		    customHeaderList:['name','deptName']
+            ,customDataMapping:
+            [{
+                header:"StudentName",field:"deptName",
+                onClick:function(){alert("you have clicked colm StudentName");}
+                
+            },
+            {
+                header:"DeptName",field:"name",
+                onClick:function(){alert("you have clicked colm DeptName");}
+                
+            }]
 		    
 		};
 	}
