@@ -2,16 +2,13 @@
 <table class="table">
     <thead>
         <tr>
-            <th>Id</th>
-            <th>Name</th>
-            <th>Dept</th>
+            <th ng-repeat="header in headerList" ng-bind="header"></th>
+            
         </tr>    
     </thead>
     <tbody>
-        <tr ng-repeat="student in data">
-            <td ng-bind=student.id></td>
-            <td ng-bind=student.name></td>
-            <td ng-bind=student.deptName></td>
+        <tr ng-repeat="d in data">
+            <td ng-repeat="header in headerList" ng-bind="d[header]"></td>
         </tr>
     </tbody>
     

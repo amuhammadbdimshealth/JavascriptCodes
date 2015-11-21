@@ -19,16 +19,14 @@ class helloDirective
 	    scope.$watch('data', function(){
 	        console.log(scope.data);
 	        if(scope.data.length>0)
-	        for(var pro in scope.data[0]){
-	            scope.headerList.push(pro);
+	        for(var prop in scope.data[0]){
+	            if(!(prop == "$$hashKey"))
+	            scope.headerList.push(prop);
 	        }
 	        console.log(scope.headerList);
 	    });
 	    
-	    var c={name:'sss', id:100};
-	    for(var p in c){
-	        console.log(p);
-	    }
+	    
 	}
 	static builder()	{
 		return new helloDirective();
