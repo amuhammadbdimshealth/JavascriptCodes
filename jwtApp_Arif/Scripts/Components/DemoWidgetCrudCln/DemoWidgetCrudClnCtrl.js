@@ -31,15 +31,14 @@ constructor(scope, svc){
 		
 		this.dConfigData={
 		    customHeaderList:['name','deptName']
-            ,customDataMapping:
+            ,customColumns:
             [{
-                header:"StudentName",field:"deptName",
-                onClick:function(){alert("you have clicked colm StudentName");}
+                field:"deptName",
+                onClick:function(row){alert("you have clicked : " + row.deptName);}
                 
             },
             {
-                header:"DeptName",field:"name",
-                onClick:function(){alert("you have clicked colm DeptName");}
+                header:"DeptName",field:"name"
                 
             }]
 		    

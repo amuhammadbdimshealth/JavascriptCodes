@@ -5,13 +5,13 @@
 <table class="table">
     <thead>
         <tr>
-            <th ng-repeat="map in options.customDataMapping" ng-bind="map.header" ng-click="map.onClick()"></th>
+            <th ng-repeat="col in options.customColumns" ng-bind="col.header || col.field"  ></th>
             
         </tr>    
     </thead>
     <tbody>
         <tr ng-repeat="row in data">
-            <td ng-repeat="map in options.customDataMapping" ng-bind="row[map.field]"></td>
+            <td ng-repeat="col in options.customColumns" ng-bind="row[col.field]" ng-click="col.onClick(row)"></td>
         </tr>
     </tbody>
 </table>
