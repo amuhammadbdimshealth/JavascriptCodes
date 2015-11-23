@@ -38,7 +38,7 @@ constructor(scope, svc){
                 
             },
             {
-                header:"DeptName",field:"name"
+                header:"Students",field:"name"
                 
             }]
 		    
