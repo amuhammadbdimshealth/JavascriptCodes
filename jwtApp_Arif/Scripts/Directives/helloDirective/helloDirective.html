@@ -11,7 +11,12 @@
     </thead>
     <tbody>
         <tr ng-repeat="row in data">
-            <td ng-repeat="col in options.customColumns" ng-bind="row[col.field]" ng-click="col.onClick(row)"></td>
+            <td ng-repeat="col in options.customColumns"  ng-click="col.onClick(row)">
+               {{row[col.field]}}
+               <input ng-repeat="action in col.actions" type="button" ng-value="action.value" ng-click="action.listener()" />
+               
+            </td>
+            
         </tr>
     </tbody>
 </table>

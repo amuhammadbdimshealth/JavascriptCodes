@@ -34,11 +34,16 @@ constructor(scope, svc){
             ,customColumns:
             [{
                 field:"deptName",
-                onClick:function(row){alert("you have clicked : " + row.deptName);}
+                onClick:function(row){alert("you have clicked : " + row.deptName);},
+                actions:[
+                    {type:"button", value:"Add", listener:function(){alert("I am listening Add");}},
+                    {type:"button", value:"Delete", listener:function(){alert("I am listening Delete");}}
+                ]
                 
             },
             {
                 header:"Students",field:"name"
+                
                 
             }]
 		    
