@@ -42,8 +42,10 @@ constructor(scope, svc){
                 
             },
             {
-                header:"Students",field:"name"
-                
+                header:"Students",field:"name",
+                actions:[
+                    {type:"button", value:"Create", listener:function(){alert("I am listening Create");}}    
+                ]
                 
             }]
 		    
